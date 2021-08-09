@@ -1,0 +1,16 @@
+.messages__item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.messages__item_img {
+	margin-right: 10px;
+	& img {
+		width: 50px;
+		border-radius: 50%;
+	}
+}
+.messages__item_text {
+	display: flex;
+	flex-wrap: wrap;
+}

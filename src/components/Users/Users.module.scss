@@ -1,0 +1,80 @@
+.user__row {
+	display: flex;
+
+	&:not(:first-child) {
+		margin-top: 15px;
+	}
+}
+.user__profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: 100px;
+}
+.user__avatar {
+	width: 60px;
+	border-radius: 50%;
+	border: 2px solid black;
+	margin-bottom: 5px;
+}
+.user__profile_btn {
+	outline: none;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	transition: 300ms;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+
+	&:hover {
+		background-color: rosybrown;
+	}
+}
+.notAuth__profile_btn {
+	position: relative;
+	outline: none;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	transition: 300ms;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+
+	&::before {
+		content: "";
+		min-width: 28px;
+		height: 28px;
+		background: url("../../assets/img/warning.png") no-repeat;
+		background-size: cover;
+		position: absolute;
+		visibility: hidden;
+		top: -2px;
+		left: -28px;
+		color: black;
+	}
+	&:hover {
+		&::before {
+			visibility: visible;
+		}
+	}
+}
+
+.user__info {
+	display: flex;
+	background-color: rgb(247, 247, 247);
+	padding: 10px;
+	border: 2px solid rgb(160, 160, 160);
+	border-radius: 16px;
+	flex: 1 1 auto;
+	justify-content: space-between;
+}
+.user__info_name {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.user__info_country {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}

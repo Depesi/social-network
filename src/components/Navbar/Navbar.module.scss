@@ -1,0 +1,29 @@
+.nav {
+	padding: 10px;
+	grid-area: nav;
+	background: rgba(0, 0, 0, 0.041);
+}
+.nav__list {
+	font-size: 22px;
+	& li {
+		margin-bottom: 15px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	& a {
+		text-decoration: none;
+		color: #343434;
+		transition: 300ms;
+		&:hover {
+			color: rosybrown;
+		}
+		&.active__link {
+			color: rosybrown;
+		}
+	}
+}
+.friends__row {
+	display: flex;
+	justify-content: space-between;
+}

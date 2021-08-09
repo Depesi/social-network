@@ -1,0 +1,42 @@
+.paginator__container {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.paginator__row {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.paginator__item {
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.3s all;
+
+	&:hover {
+		color: rosybrown;
+	}
+}
+
+.selected__page {
+	color: rosybrown;
+}
+
+.button__navigation {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	padding: 5px 10px;
+	transition: 0.3s all;
+	border-radius: 10px;
+	font-size: 18px;
+
+	&:hover {
+		background-color: #444444;
+		color: rgb(226, 226, 226);
+	}
+}

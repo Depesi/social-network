@@ -1,0 +1,43 @@
+.input__post_text {
+	width: 100%;
+	margin: 0 auto;
+	background: #ececec;
+	color: #343434;
+	padding: 10px 10px;
+	margin-bottom: 20px;
+	outline: none;
+	font-size: 18px;
+	box-sizing: border-box;
+	resize: none;
+	&:focus {
+		background: #fff;
+	}
+}
+.error {
+	border: 2px solid red;
+}
+.error__text {
+	color: red;
+	margin-bottom: 10px;
+}
+
+// ДИАЛОГИ
+
+.newMessages__input {
+	resize: none;
+	outline: none;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+// /ДИАЛОГИ
+
+// LOGIN
+.login__form_input {
+	margin-bottom: 10px;
+	border-radius: 16px;
+	font-size: 18px;
+	padding: 2px 8px;
+	outline: none;
+}
+// /LOGIN

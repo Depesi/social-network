@@ -1,0 +1,13 @@
+.dialogs__item {
+	font-size: 20px;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+}
+.dialogs__item_avatar {
+	margin-right: 10px;
+	& img {
+		width: 50px;
+		border-radius: 50%;
+	}
+}

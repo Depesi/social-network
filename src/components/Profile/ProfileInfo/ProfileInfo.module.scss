@@ -1,0 +1,66 @@
+.content__background_img {
+	& img {
+		width: 100%;
+		height: 350px;
+	}
+}
+.profile__row {
+	display: flex;
+}
+
+.profile__avatar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	& img {
+		border-radius: 50%;
+		width: 200px;
+		margin-bottom: 20px;
+	}
+	margin-right: 5%;
+}
+
+.profile__info_name {
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.info__list_user {
+	font-size: 20px;
+	& li {
+		margin-bottom: 5px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.looking__job_img {
+	width: 150px;
+}
+.profile__status {
+	margin-bottom: 10px;
+}
+
+.button_photo {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.label__button_photo {
+	display: block;
+	padding: 8px 12px;
+	border-radius: 16px;
+	background-color: rosybrown;
+	transition: 0.3s all;
+	cursor: pointer;
+
+	&:hover {
+		color: white;
+		background: #333;
+	}
+}

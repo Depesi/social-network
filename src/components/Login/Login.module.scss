@@ -1,0 +1,41 @@
+.login__form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+.login__header {
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+.login__form_input {
+	margin-bottom: 10px;
+	border-radius: 16px;
+	font-size: 18px;
+	padding: 2px 8px;
+	outline: none;
+}
+.login__form_checkbox {
+	margin-bottom: 10px;
+}
+.login__form_bttn {
+	font-size: 18px;
+	border-radius: 10px;
+	font-size: 18px;
+	padding: 2px 8px;
+	outline: none;
+	transition: 0.2s all;
+	background-color: white;
+	cursor: pointer;
+	&:hover {
+		background: #424242;
+		color: white;
+	}
+}
+
+.form__error {
+	font-weight: 500;
+	font-size: 20px;
+	color: red;
+	margin: 5px 0;
+}

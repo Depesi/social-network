@@ -1,0 +1,41 @@
+.profile__wall {
+	display: flex;
+	flex-direction: column;
+}
+
+.new__post {
+	margin-bottom: 20px;
+}
+
+.input__post_text {
+	width: 100%;
+	margin: 0 auto;
+	background: #ececec;
+	color: #343434;
+	padding: 10px 10px;
+	margin-bottom: 20px;
+	outline: none;
+	font-size: 18px;
+	box-sizing: border-box;
+	resize: none;
+	&:focus {
+		background: #fff;
+	}
+}
+
+.input__post_button {
+	text-align: right;
+	& button {
+		background: #b8b8b8;
+		outline: none;
+		padding: 5px 10px;
+		font-size: 20px;
+		border: none;
+		cursor: pointer;
+
+		&:focus {
+			background: #424242;
+			color: white;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.dialogs__page {
+	display: grid;
+	grid-template-columns: 4fr 8fr;
+}
+
+.messages {
+	border-left: 2px solid rosybrown;
+	padding: 0 10px;
+	& img {
+		width: 50px;
+		height: 50px;
+	}
+}
+.newMessage {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.newMessages__input {
+	resize: none;
+	outline: none;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.newMessages__button {
+	width: 100px;
+	padding: 5px;
+}
+
+.dialogs {
+	& img {
+		width: 50px;
+		height: 50px;
+	}
+}
