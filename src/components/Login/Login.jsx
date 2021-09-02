@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Field, reduxForm } from 'redux-form';
+import { reduxForm } from 'redux-form';
 import { required } from '../../utils/validators/validators';
 import { createField, Input } from '../common/FormControls/FormsControls';
 import { login, logout } from '../../redux/auth-reducer';
@@ -49,7 +49,6 @@ let Login = (props) => {
 		<div className={style.login__form}>
 			<h1 className={style.login__header}>LOGIN</h1>
 			<LoginReduxForm onSubmit={onSubmit} captchaUrl={props.captchaUrl} />
-
 		</div>
 	)
 }

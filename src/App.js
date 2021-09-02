@@ -23,19 +23,12 @@ const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsCo
 const ProfileContainerC = React.lazy(() => import('./components/Profile/ProfileContainerC'));
 
 class App extends React.Component {
-
-	catchAllUnhandleErrors = (promiseRejectionEvent) => {
-		alert("some error");
-		console.error(promiseRejectionEvent);
-	}
-
+	// catchAllUnhandleErrors = (promiseRejectionEvent) => {
+	// 	alert("some error");
+	// 	console.error(promiseRejectionEvent);
+	// }
 	componentDidMount() {
 		this.props.initializeApp();
-		window.addEventListener("unhandleRejection", this.catchAllUnhandleErrors);
-	}
-
-	componentWillUnmount() {
-		window.removeEventListener("unhandleRejection", this.catchAllUnhandleErrors);
 	}
 
 	render() {
@@ -79,7 +72,7 @@ let AppContainer = compose(
 
 export function SamuraiJSApp(props) {
 	return <BrowserRouter>
-		<Provider store={store} >
+		<Provider store={store} > {/* Створення контексту завдяки якому всі дочірні елементи можуть достучатись до стора, це відбувається через Consumer, але це сховано в ф-ції connect */}
 			<AppContainer state={store.getState()} />
 		</Provider>,
 	</BrowserRouter>
